@@ -43,7 +43,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.12</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -61,8 +61,32 @@
       <artifactId>commons-math3</artifactId>
       <version>3.5</version>
     </dependency>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-core</artifactId>
+      <version>0.20.2-cdh3u1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-test</artifactId>
+      <version>0.20.2-cdh3u1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+       <groupId>org.apache.hadoop</groupId>
+       <artifactId>hadoop-mrunit</artifactId>
+       <version>0.20.2-cdh3u1</version>
+    </dependency>
   </dependencies>
-  
+
+  <repositories>
+    <repository>
+      <id>cloudera</id>
+      <name>cloudera</name>
+      <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+    </repository>
+  </repositories>
+
   <build>
     <plugins>
       <plugin>
