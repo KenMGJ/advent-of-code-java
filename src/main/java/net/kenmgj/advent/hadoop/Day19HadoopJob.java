@@ -36,8 +36,6 @@ import org.apache.hadoop.util.ToolRunner;
 
 public class Day19HadoopJob extends Configured implements Tool {
 
-	private static final String REPLACEMENT_FILE_KEY = "replacementFile";
-
 	public static class Mapr extends MapReduceBase implements
 	Mapper<LongWritable, Text, Text, NullWritable> {
 
